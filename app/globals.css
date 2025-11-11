@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
